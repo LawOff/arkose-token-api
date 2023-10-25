@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arkose API Token</title>
+    <script src="https://client-api.arkoselabs.com/v2/35536E1E-65B4-4D96-9D97-6ADB7EFF8147/api.js" data-callback="init" async defer></script>
+</head>
+
+<body>
+    <div>
+        <p><span id="token"></span></p>
+    </div>
+    
+    <script>
+        function init(myEnforcement) {
+            myEnforcement.setConfig({
+                onCompleted: (response) => {
+                    document.body.setAttribute("data-token", response.token);
+                    document.getElementById("token").innerHTML = response.token;
+                    console.log("Token generated")
+                },
+            });
+
+            setTimeout(() => {
+                myEnforcement.run();
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>
