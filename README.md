@@ -11,3 +11,6 @@ Deploy simple API that generate arkose token with vercel
 
 ### Sources:
 
+[linweiyuan - chatgpt-arkose-token-api](https://github.com/linweiyuan/chatgpt-arkose-token-api)
+[flyingpot - funcaptcha](https://github.com/flyingpot/funcaptcha)
+
