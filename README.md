@@ -90,7 +90,7 @@ const payload = {
 ```
 
 
-## Inspirations:
+## Inspirations from:
 [linweiyuan - chatgpt-arkose-token-api](https://github.com/linweiyuan/chatgpt-arkose-token-api)
 
 [flyingpot - funcaptcha](https://github.com/flyingpot/funcaptcha)
